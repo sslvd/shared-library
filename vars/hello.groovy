@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 
-deff call(){
+def call(){
   input message:'terraform destroy?',ok:'yes',
                  sh("terraform -auto-approve")
                  }
