@@ -1,5 +1,6 @@
 #!/usr/bin/env groovy
 
-def call(String name = 'dinga') {
-  echo "Hello, ${name}."
-}
+deff call(){
+  input message:'terraform destroy?',ok:'yes',
+                 sh("terraform -auto-approve")
+                 }
